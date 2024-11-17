@@ -1,6 +1,7 @@
-import 'package:flutter_tv/environment.dart';
 import 'package:flutter_tv/models/vimeo_video_data.dart';
 import 'package:http/http.dart' as http;
+
+import '../environment.dart';
 
 class VimeoRepository {
   static const String urlBase = 'https://api.vimeo.com';

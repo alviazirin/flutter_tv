@@ -46,7 +46,7 @@ class ControlsBloc extends Bloc<ControlsEvent, ControlsState> {
   }
 
   ///Handle control input events
-  bool onKeyEvent(FocusNode f, RawKeyEvent e) {
+  onKeyEvent(FocusNode f, RawKeyEvent e) {
     if (e is RawKeyDownEvent) {
       if (state is ControlsStateVisible) {
         add(ControlsEvent.CANCEL);
@@ -59,8 +59,6 @@ class ControlsBloc extends Bloc<ControlsEvent, ControlsState> {
       }
       currentSelection = f;
     }
-
-    return false;
   }
 }
 

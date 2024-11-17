@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name="io.flutter.app.FlutterApplication"
+        android:name="${applicationName}"
         android:label="flutter_tv"
         android:banner="@drawable/app_icon_your_company"
 
@@ -51,5 +51,21 @@
     <uses-feature android:name="android.software.leanback"
         android:required="false" />
     <uses-feature android:name="android.hardware.touchscreen"
-        android:required="false" />
+        android:required="false" />       
+ <uses-feature android:name="android.hardware.faketouch"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.telephony"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.camera"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.nfc"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.location.gps"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.microphone"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.sensor"
+ android:required="false"/>
+ <uses-feature android:name="android.hardware.wifi"
+ android:required="false"/>
 </manifest>
